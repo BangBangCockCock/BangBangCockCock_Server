@@ -60,13 +60,13 @@
 
 ## Architecture
 
-![architecture](https://flood-master.s3.ap-northeast-2.amazonaws.com/Untitled+Diagram+(1)+(2).png)  
+  
 
 <br>
 
 ## DB ERD
 
-![ERD](https://github.com/BangBangCockCock/BangBangCockCock_Server/blob/master/public/images/erd.jpeg?raw=true)
+![ERD](https://github.com/BangBangCockCock/BangBangCockCock_Server/blob/master/public/images/erd.png?raw=true)
 
 <br>
 
