@@ -1,132 +1,72 @@
 #  BangBangCockCock
-<img style="border: 1px solid black !important; border-radius:20px;" src="https://flood-master.s3.ap-northeast-2.amazonaws.com/KakaoTalk_Photo_2020-01-02-03-54-55-1.png" width="200px" />
+<img style="border: 1px solid black !important; border-radius:20px;" src="https://github.com/BangBangCockCock/BangBangCockCock_Server/blob/master/public/images/bangbangIcon.jpeg?raw=true" width="200px" />
 
 ![node_badge](https://img.shields.io/badge/node-%3E%3D%208.0.0-green)
-![npm_bedge](https://img.shields.io/badge/npm-v6.10.1-blue)
+![npm_bedge](https://img.shields.io/npm/v/npm)
 
-* <b> SOPT 26th SopKerTohn
+* <b> SOPT 26th SopKerThon
     
 * 프로젝트 기간: 2020.06.06~ 2020.06.07
 
-* [API 문서](https://github.com/Flood-SOPT25th/Flood-Server/wiki)</b>
+* [API 문서](https://github.com/BangBangCockCock/BangBangCockCock_Server/wiki)</b>
+
+* <b> [Notion](https://www.notion.so/23819e02a64d4ba9bcf19e285b33f59f)
 
 <br>
 
 
-## :bookmark_tabs: 프로젝트 설명
+##  프로젝트 설명
 
-<b>정보를 공유하는 가장 쉬운 방법, Flood입니다. :ocean:</b>
-회사내에 분산된, 정보 공유를 더 빠르고 쉽게 공유하는 플랫폼으로  정보의 홍수 속에서 
-각각 회사들이 공유하고 있는 정보를 필터링하여 일반 유저들에게 제공하는 서비스입니다.
+<b>"죄송해요, 제가 방구석에 선약이 있어서,," </b>
 
-<br>
+아무리 코로나가 와도 🔥흥🔥을 주체할수 없는 사람들을 위한 ****방구석 콘서트 정보 플랫폼
 
-## :bookmark_tabs: WorkFlow
+방구석에서 다양한 공연 행사를 즐길 수 있는 플랫폼
 
-![node_badge](https://flood-master.s3.ap-northeast-2.amazonaws.com/KakaoTalk_Photo_2020-01-03-23-51-00.png)
+코로나지만 공연은 보고싶어(코공보)
 
-<br>
+아무리 코로나가 와도 흥을 주체할수 없는 사람들을 위한... 방구석 콘서트 정보 플랫폼
 
-## :earth_americas: Team Role 
+**집에 일찍가는 이유는 콘서트가 있기 때문이야**
+
+- **방구석에서 하얗게 불태웠다.**
+- 공연장소 : 내 방구석
+- 콘서트는 링크타고 입장하세요.
+
+> 방방콕콕 → 집에서 방방뛰고 입장은 콕!(터치한번)
 
 
-#### :surfing_man: 이동훈 
-
-- 게시물, 북마크, 댓글 관련 DB 설계및 구축
-- 북마크 기능 구현
-- 게시물 업로드, 수정 기능 구현
-- 댓글 및 대댓글 기능 구현
-- 프록시 서버 및 메인 서버 설정, 배포
-- Docker build 및 이미지 관리
-
-#### :surfing_woman: 박주연 
-
-- 마이페이지 프로필 설정 변경 기능 구현
-- 이미지 및 비밀번호 변경 기능 구현
-- 조직설정, 계정관리 기능 구현
-- 테스팅 자동화 환경 구축
-
-#### :surfing_man: 최영훈
-
-- user, group 관련 DB 설계및 구축
-- 회원가입 기능 구현
-- 로그인 기능 구현
-- 조직 생성 기능 구현
-- 비밀번호 찾기 구현
-- 아이디 찾기 구현
 
 <br>
 
-## :heavy_check_mark: Features
+##  Package
 
-- url로 해당 게시물의 썸네일, 제목, 소개 크롤링.
-- 공유하기 버튼을 사용하여, 쉽게 공유하기 가능.
-- 그룹 내 사용자들의 조회수 및 북마크수를 기반으로 Top3 게시물 추천.
-- 회사 내에 게시물들을 정리하여 통계적 그래프로 시각화.
-- 중복되지 않는 조직 코드 생성
 
-<br>
-
-## :blue_book: Package
-
-사용 패키지(모듈)은 다음과 같습니다.
-
-- **cheerio-httpcli** : 뉴스 기사 크롤링 및 파싱 도구
-- **crypto** : 패스워드 암호화 및 인증 
-- **express** : 웹,서버 개발 프레임워크
-- **express-formidable** : form-data 파싱 도구
-- **jsonwebtoken** : JWT(Json Web Token) 생성 및 인증 
-- **multer** : 파일 업로드 도구
-- **multer-s3** : AWS S3 파일 업로드 도구
-- **rand-token** : 랜덤 토큰 생성 도구
-- **moment** : 임의의 문자열과 unix시간을 조합해 중복되지 않는 조직코드 생성
-- **mocha** : 테스팅 자동화 환경 구축 
 
 
 ```json
 "dependencies": {
-    "aws-sdk": "^2.596.0",
-    "chai": "^4.2.0",
-    "cheerio-httpcli": "^0.7.4",
     "cookie-parser": "~1.4.4",
-    "crypto": "^1.0.1",
     "debug": "~2.6.9",
-    "ejs": "~2.6.1",
-    "expect": "^24.9.0",
     "express": "~4.16.1",
-    "express-formidable": "^1.2.0",
     "http-errors": "~1.6.3",
-    "jsonwebtoken": "^8.5.1",
-    "moment": "^2.24.0",
-    "mongoose": "^5.8.3",
+    "jade": "~1.11.0",
     "morgan": "~1.9.1",
-    "multer": "^1.4.2",
-    "multer-s3": "^2.9.0",
-    "multiparty": "^4.2.1",
-    "nodemon": "^2.0.2",
-    "path": "^0.12.7",
-    "rand-token": "^0.4.0",
-    "request": "^2.88.0",
-    "should": "^13.2.3",
-    "supertest": "^4.0.2",
-    "uuid": "^3.3.3"
-  },
-  "devDependencies": {
-    "mocha": "^6.2.2"
+    "promise-mysql": "^4.1.3"
   }
 ```
 
 <br>
 
-## :green_book: Architecture
+## Architecture
 
 ![architecture](https://flood-master.s3.ap-northeast-2.amazonaws.com/Untitled+Diagram+(1)+(2).png)  
 
 <br>
 
-## :orange_book: DB ERD
+## DB ERD
 
-![ERD](https://flood-master.s3.ap-northeast-2.amazonaws.com/Untitled+Diagram.png)
+![ERD](https://github.com/BangBangCockCock/BangBangCockCock_Server/blob/master/public/images/erd.jpeg?raw=true)
 
 <br>
 
