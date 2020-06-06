@@ -83,3 +83,9 @@
 * [PM2](http://pm2.keymetrics.io/) - 프로세스 관리자
 * [MySql](https://miro.medium.com/max/800/0*GFfnMZ1sESpT9uYs.jpg) - 관계형 데이터베이스
 
+
+## :computer: 개발자
+
+
+* [박현주](https://github.com/HyeonJooo)
+* [최영훈](https://github.com/dudgns3tp)
