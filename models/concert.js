@@ -65,7 +65,18 @@ const concerts = {
             console.log('getCategory err'+ err);
             throw err;
         }
+    },
+    getMostLike : async () =>{
+        const query = `select concertIdx,concert_title,concert_date,concert_image,concert_tag from ${table} where  concertIdx = 1 and concertIdx = 8 and concertIdx = 10`;
+        try{
+            const result = await pool.queryParamArr(query);
+            return result;
+        }catch(err){
+            console.log('getMostLike err'+ err);
+            throw err;
+        }
     }
+    
 }
 
 module.exports = concerts;
