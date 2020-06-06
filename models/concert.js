@@ -23,6 +23,18 @@ const concerts = {
             console.log('getManyLikesConcert err'+ err);
             throw err;
         }
+    },
+    isConcertIdx: async (concertIdx) =>{
+        const query = `select concertIdx from ${table} where concertIdx ="${concertIdx}"`;
+        try{
+            const result = await pool.queryParam(query);
+            if(result.length >0){
+                return true;
+            }else return false;
+        }catch(err){
+            console.log('isConcertIdx err'+err);
+            throw err;
+        }
     }
 }
 
