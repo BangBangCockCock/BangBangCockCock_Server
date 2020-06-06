@@ -67,9 +67,10 @@ const concerts = {
         }
     },
     getMostLike : async () =>{
-        const query = `select concertIdx,concert_title,concert_date,concert_image,concert_tag from ${table} where  concertIdx = 1 and concertIdx = 8 and concertIdx = 10`;
+        const query = `select concertIdx,concert_title,concert_date,concert_image,concert_tag from ${table}`;
         try{
-            const result = await pool.queryParamArr(query);
+            const result = await pool.queryParam(query);
+            console.log(result)
             return result;
         }catch(err){
             console.log('getMostLike err'+ err);

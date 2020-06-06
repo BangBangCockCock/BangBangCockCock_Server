@@ -28,5 +28,9 @@ module.exports ={
         const result = await concert.getCategory(category);
         return await res.status(200).send(util.success(200,"카테고리별 조회성공", result));
 
+    },
+    readMostLike : async (req,res) =>{
+        const result = await concert.getMostLike();
+        return await res.status(200).send(util.success(200,"좋아요순 조회 성공", result));
     }
 }
