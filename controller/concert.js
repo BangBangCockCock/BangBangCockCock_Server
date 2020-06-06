@@ -17,5 +17,9 @@ module.exports ={
         }
         const result = await concert.getConcertOne(concertIdx);
         return await res.status(200).send(util.success(200,"콘서트정보 가져오기 성공",result));
+    },
+    readeAllConcert : async(req,res)=>{
+        const result = await concert.getConcertAll();
+        return await res.status(200).send(util.success(200,"모든 콘서트 정보 가져오기 성공", result));
     }
 }

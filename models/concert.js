@@ -3,7 +3,7 @@ const table = "concert";
 const likeTable = "likes";
 const concerts = {
     getBanner : async() =>{
-        const query = `SELECT concert_title,concert_date,concert_image,concert_category FROM ${table} order by rand() limit 1`;
+        const query = `SELECT concert_title,concert_date,concert_image,concert_category FROM ${table} where concertIdx = 1`;
         try{
             const result = await pool.queryParam(query);
             return result;
@@ -43,6 +43,16 @@ const concerts = {
             return result;
         }catch(err){
             console.log('getConcertOne err'+ err);
+            throw err;
+        }
+    },
+    getConcertAll: async()=>{
+        const query = `select * from ${table}`;
+        try{
+            const result = await pool.queryParam(query);
+            return result;
+        }catch(err){
+            console.log('getConcertAll err'+ err);
             throw err;
         }
     }

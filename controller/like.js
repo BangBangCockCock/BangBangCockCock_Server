@@ -11,6 +11,13 @@ module.exports ={
         if(!concertIdx){
             return await res.status(400).send(util.fail(400,resMessage.NULL_VALUE));
         }
+        
+        const validConcertIdx = await concert.isConcertIdx(concertIdx);
+        
+        if(!validConcertIdx){
+            return await res.status(400).send(util.fail(400,"유효하지 않은 concertIdx"));
+        }
+
         const result = await like.isLike(userIdx,concertIdx);
         return await res.status(200).send(util.success(200,"좋아요 조회 성공",{isLike:result}));
     },
