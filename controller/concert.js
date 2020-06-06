@@ -7,5 +7,15 @@ module.exports ={
     getBanner : async (req,res) =>{
         const data = await concert.getBanner();
         return await res.status(200).send(util.success(200,"배너 가져오기 성공",data));
+    },
+    readOneConcert : async(req,res)=>{
+        const {concertIdx} = req.params;
+        const validConcertIdx = await concert.isConcertIdx(concertIdx);
+        // 유효한 콘서트 인덱스가 아니라면
+        if(!validConcertIdx){
+            return await res.status(400).send(util.fail(400,"유효하지 않은 concertIdx"));
+        }
+        const result = await concert.getConcertOne(concertIdx);
+        return await res.status(200).send(util.success(200,"콘서트정보 가져오기 성공",result));
     }
 }

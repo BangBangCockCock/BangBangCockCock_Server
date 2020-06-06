@@ -35,6 +35,16 @@ const concerts = {
             console.log('isConcertIdx err'+err);
             throw err;
         }
+    },
+    getConcertOne : async(concertIdx) =>{
+        const query = `select * from ${table} where concertIdx = "${concertIdx}"`;
+        try{
+            const result = await pool.queryParam(query);
+            return result;
+        }catch(err){
+            console.log('getConcertOne err'+ err);
+            throw err;
+        }
     }
 }
 
