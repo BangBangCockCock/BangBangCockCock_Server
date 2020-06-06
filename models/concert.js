@@ -13,7 +13,8 @@ const concerts = {
         }
     },
     getManyLikesConcert: async() =>{
-        const query = `select concertIdx ,COUNT(concertIdx) as cnt from ${table} natural join ${likeTable} group by concertIdx order by cnt desc;`
+        const manyLikeQuery = `select concertIdx ,COUNT(concertIdx) as cnt from ${table} natural join ${likeTable} group by concertIdx order by cnt desc;`
+        const query2 = ``
         try{
             const result = await pool.queryParam(query);
             console.log(result);
@@ -23,7 +24,6 @@ const concerts = {
             throw err;
         }
     }
-   
 }
 
 module.exports = concerts;
