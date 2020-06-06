@@ -1,4 +1,4 @@
-#  BangBangCockCock
+#  BangBangCockCock 📱 _ 🕺흥부자들💃
 <img style="border: 1px solid black !important; border-radius:20px;" src="https://github.com/BangBangCockCock/BangBangCockCock_Server/blob/master/public/images/bangbangIcon.jpeg?raw=true" width="200px" />
 
 ![node_badge](https://img.shields.io/badge/node-%3E%3D%208.0.0-green)
@@ -15,7 +15,7 @@
 <br>
 
 
-##  프로젝트 설명
+## 🕺 프로젝트 설명
 
 <b>"죄송해요, 제가 방구석에 선약이 있어서,," </b>
 
@@ -55,16 +55,11 @@
     "promise-mysql": "^4.1.3"
   }
 ```
-
-<br>
-
-## Architecture
-
   
 
 <br>
 
-## DB ERD
+## 💃 DB ERD
 
 ![ERD](https://github.com/BangBangCockCock/BangBangCockCock_Server/blob/master/public/images/erd.png?raw=true)
 
