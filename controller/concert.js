@@ -21,5 +21,12 @@ module.exports ={
     readeAllConcert : async(req,res)=>{
         const result = await concert.getConcertAll();
         return await res.status(200).send(util.success(200,"모든 콘서트 정보 가져오기 성공", result));
+    },
+    getCategory : async (req,res) =>{
+        const {category} = req.params;
+
+        const result = await concert.getCategory(category);
+        return await res.status(200).send(util.success(200,"카테고리별 조회성공", result));
+
     }
 }

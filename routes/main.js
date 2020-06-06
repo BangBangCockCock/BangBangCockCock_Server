@@ -8,5 +8,6 @@ router.get('/like/:concertIdx', likeController.getLike);
 router.put('/like', likeController.updateLike);
 router.get('/:concertIdx', concertController.readOneConcert);
 router.get('/',concertController.readeAllConcert);
+router.get('/filter/:category', concertController.getCategory);
 
 module.exports = router;
