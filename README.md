@@ -35,6 +35,8 @@
 
 > 방방콕콕 → 집에서 방방뛰고 입장은 콕!(터치한번)
 
+![main_noline ver](https://user-images.githubusercontent.com/52772787/83956526-01644580-a89a-11ea-9deb-f249481dc57b.png)
+
 
 
 <br>
