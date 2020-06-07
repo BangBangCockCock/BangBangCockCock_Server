@@ -2,6 +2,7 @@ const concert = require('../models/concert');
 const util = require('../modules/util');
 const resMessage = require('../modules/responseMessage');
 const statusCode = require('../modules/statusCode');
+const moment = require('moment');
 
 module.exports ={
     getBanner : async (req,res) =>{
@@ -32,5 +33,10 @@ module.exports ={
     readMostLike : async (req,res) =>{
         const result = await concert.getMostLike();
         return await res.status(200).send(util.success(200,"좋아요순 조회 성공", result));
+    },
+    readTodayConcert : async (req, res)=>{
+        const today = moment().format('YYYY-MM-DD');
+        const result = await concert.getTodayConcert(today);
+        return await res.status(200).send(util.success(200,"오늘 영화 조회 성공", result));
     }
 }

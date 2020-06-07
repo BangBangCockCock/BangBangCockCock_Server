@@ -10,5 +10,6 @@ router.get('/:concertIdx', concertController.readOneConcert);
 router.get('/',concertController.readeAllConcert);
 router.get('/filter/:category', concertController.getCategory);
 router.get('/likeData',concertController.readMostLike);
+router.get('/todayConcert', concertController.readTodayConcert);
 
 module.exports = router;

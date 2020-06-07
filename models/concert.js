@@ -1,6 +1,7 @@
 const pool = require('../modules/pool');
 const table = "concert";
 const likeTable = "likes";
+
 const concerts = {
     getBanner : async() =>{
         const query = `SELECT concertIdx,concert_title,concert_date,concert_image,concert_tag FROM ${table} where concertIdx = 1`;
@@ -74,6 +75,16 @@ const concerts = {
             return result;
         }catch(err){
             console.log('getMostLike err'+ err);
+            throw err;
+        }
+    },
+    getTodayConcert : async(concert_date) =>{
+        const query = `select concertIdx, concert_title, concert_date, concert_image, concert_tag ${table} where concert_date "${table}"`;
+        try{
+            const result = await pool.queryParam(query);
+            return result;
+        }catch(err){
+            console.log('getTodayConcert err:' +err);
             throw err;
         }
     }
