@@ -70,15 +70,14 @@
 ## :closed_book: 배포
 
 * AWS EC2 - 클라우드 컴퓨팅 시스템
-* AWS RDS - 아마존 관계형 데이터베이스 
-
+* AWS RDS - 
 ## :books: 사용된 도구
 
 * [Node.js](https://nodejs.org/ko/) - 런타임 환경
 * [Express.js](http://expressjs.com/ko/) - 익스프레스 프레임워크 
-* [NPM](https://rometools.github.io/rome/) - 자바 스크립트 패키지 관리자
+* [NPM](https://rometools.github.io/rome/) - 노드 패키지 관리자
 * [PM2](http://pm2.keymetrics.io/) - 프로세스 관리자
-* [MySql](https://miro.medium.com/max/800/0*GFfnMZ1sESpT9uYs.jpg) - 관계형 데이터베이스
+* [MySql](https://miro.medium.com/max/800/0*GFfnMZ1sESpT9uYs.jpg) - 데이터베이스
 
 
 ## :computer: 개발자
